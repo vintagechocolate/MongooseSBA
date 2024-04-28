@@ -31,6 +31,3 @@ This is a server application built using Node.js, Express, and MongoDB. It provi
 - The `email` field in the `User` model is validated using a regular expression to ensure a valid email format.
 - The `password` field in the `User` model is validated to ensure a minimum length of 8 characters.
 
-## Database Seeding
-
-The `seed.js` file is used to populate the database with sample data, including users, posts, and comments.
