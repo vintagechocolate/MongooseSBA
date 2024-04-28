@@ -58,7 +58,7 @@ router.delete('/:id', async (req, res) => {
       return res.status(404).json({ message: 'Cannot find comment' });
     }
 
-    await comment.remove();
+    await comment.deleteOne();
     res.json({ message: 'Deleted comment' });
   } catch (err) {
     res.status(500).json({ message: err.message });

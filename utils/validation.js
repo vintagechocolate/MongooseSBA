@@ -11,4 +11,3 @@ const validateEmail = (email) => {
     validateEmail,
     validatePassword,
   };
-  
