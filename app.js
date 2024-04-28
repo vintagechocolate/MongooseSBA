@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require('express');
 const mongoose = require('mongoose');
 const usersRouter = require('./routes/users');
@@ -5,7 +6,7 @@ const postsRouter = require('./routes/posts');
 const commentsRouter = require('./routes/comments');
 
 const app = express();
-const port = 3000;
+const PORT =  process.env.PORT || 3000;
 
 // Connect to MongoDB
 require('./db');
