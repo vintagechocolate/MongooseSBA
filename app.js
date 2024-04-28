@@ -18,6 +18,12 @@ app.use('/users', usersRouter);
 app.use('/posts', postsRouter);
 app.use('/comments', commentsRouter);
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${port}`);
+app.get("/", (req, res) => {
+  res.send("HOME PAGE");
 });
+
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port: ${PORT}`);
+});
+

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { validateEmail, validatePassword } = require('../utils/validation');
+const { validateEmail, validatePassword } = require('../utils/validation.js');
 
 const userSchema = new mongoose.Schema({
   name: { type: String, required: true, minlength: 3, maxlength: 50 },
